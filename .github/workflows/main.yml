@@ -9,8 +9,8 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: access
-        run: chmod +x entrypoint.sh
+      #- name: access
+       # run: chmod +x entrypoint.sh
       
       - name: Hello world action step
         uses: ./ #NisargShah1410/gh-docker-demo@v2 # Uses an action in the root directory
