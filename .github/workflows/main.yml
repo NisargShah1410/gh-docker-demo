@@ -11,12 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - name: access
         run: chmod +x entrypoint.sh
-      - name: Set up .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 3.1.301
-          include-prerelease: false
-
+      
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         id: hello
